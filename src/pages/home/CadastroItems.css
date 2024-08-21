@@ -1,0 +1,179 @@
+/*Estrutura básica da página
+***********************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+h1{
+    border-bottom: 1px solid black;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+}
+
+/*Botões
+***********************************************/
+button{
+    color: white;
+    font-weight: bold;
+    line-height: 2em;
+    border-radius: 0.8em;
+    padding: 0.3em;
+}
+
+button:hover{
+    cursor: pointer;
+    animation: size 0.5s alternate infinite;
+}
+
+.btnCadastrar{
+    background-color: green;
+    margin-left: auto;
+}
+
+.btnExcluir{
+    background-color: red;
+    margin-left: 1em;
+}
+
+.btnEditar{
+    background-color: orange;
+}
+
+.btnFechar{
+    background-color: gray;
+}
+
+/*Animações
+***********************************************/
+@keyframes size {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+    
+}
+
+/*Estilos do componente CadastroItems
+***********************************************/
+#CadastroItems{
+    background-color: white;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 5px 5px 10px black;
+    width: 755px;
+    position: absolute;
+
+}
+
+.inputs{
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+    margin: 1em 0 2em 0;
+}
+
+
+.inputs input{
+    line-height: 2em;
+    border-radius: 0.8em;
+    border: 1px solid black;
+    padding: 0.3em;
+}
+
+.inputs select{
+    line-height: 2em;
+    border-radius: 0.8em;
+    border: 1px solid black;
+    padding: 0.3em;
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding-right: 19em;
+    font-weight: bold;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    box-shadow: 5px 5px 10px black;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.paragrafos {
+    display: grid;
+    grid-template-columns: 150px 190px 150px;
+    gap: 1em;
+}
+
+.paragrafos p {
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    text-overflow: ellipsis;  /* Adiciona reticências (...) caso o texto seja muito longo */
+    white-space: nowrap;  /* Impede que o texto quebre em várias linhas */
+}
+
+.clear{
+    clear: both;
+}
+
+/*Estilos do componente EditarItems
+***********************************************/
+#EditarItems{
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background-color: rgba(128, 128, 128, 0.633);
+}
+
+#forms{
+    background-color: white;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+#EditarItems .inputs{
+    margin: 1em 0 0 0;
+}
+
+.botoesCard{
+    display: flex;
+    gap: 0.5em;
+    margin-left: auto;
+}
