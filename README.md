@@ -1,8 +1,23 @@
-# React + Vite
+# CRUD Simples com React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de CRUD simples desenvolvido em React. Ele permite que você liste, cadastre, edite e exclua itens de forma fácil e intuitiva.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Listar**: Exibe uma lista de todos os itens cadastrados.
+- **Cadastrar**: Permite a adição de novos itens à lista.
+- **Editar**: Possibilita a edição dos dados de um item existente.
+- **Excluir**: Remove um item da lista.
+
+## Tecnologias Utilizadas
+
+- **React**: Biblioteca JavaScript para construção da interface.
+- **UUID**: Biblioteca para geração de identificadores únicos para os itens.
+- **CSS**: Estilização da aplicação.
+
+## Como Rodar o Projeto
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/diegoflausino45/CRUD-Simples-com-React.git
+
